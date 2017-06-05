@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onLoadFinished(Loader<ArrayList<Story>> loader, ArrayList<Story> stories) {
 
-        storyAdapter = new StoryAdapter(stories,this);
+        storyAdapter = new StoryAdapter(MainActivity.this,stories,this);
         recyclerView.setAdapter(storyAdapter);
     }
     @Override

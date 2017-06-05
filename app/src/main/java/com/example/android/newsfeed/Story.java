@@ -1,8 +1,5 @@
 package com.example.android.newsfeed;
 
-import static android.R.attr.thumb;
-import static android.R.attr.thumbnail;
-
 /**
  * Created by jessica on 3/8/2017.
  */
@@ -13,14 +10,16 @@ public class Story {
     String mSection;
     String mDate;
     String mUrl;
+    String mThumbnail;
 
 
 
-    public Story(String title, String section, String date, String url){
+    public Story(String title, String section, String date, String url, String thumbnail){
         mTitle = title;
         mSection = section;
         mDate = date;
         mUrl = url;
+        mThumbnail = thumbnail;
     }
 
     public String getUrl() {
@@ -35,6 +34,8 @@ public class Story {
     }
 
     public String getDate() {
-        return mDate;
+        return mDate;}
+    public String getThumbnail (){
+        return mThumbnail;
     }
 }

@@ -72,7 +72,7 @@ public final class QueryUtils {
                 } catch (JSONException e) {
                     Log.e(LOG_TAG, "Problem retrieving the thumbnail", e);
                 }
-                    stories.add(new Story(storyTitle, storySection,storyDate, storyUrl));
+                    stories.add(new Story(storyTitle, storySection,storyDate, storyUrl,thumbnail));
 
             }
         }
