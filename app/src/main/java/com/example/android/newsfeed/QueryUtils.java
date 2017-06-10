@@ -45,7 +45,7 @@ public final class QueryUtils {
         return  stories;
     }
 
-    public static ArrayList<Story> extractStories (String url){
+    public static ArrayList<Story> extractStories (String jasonResponce){
 
         ArrayList<Story> stories = new ArrayList<>();
 
@@ -53,7 +53,7 @@ public final class QueryUtils {
         try {
 
 
-            JSONObject root = new JSONObject(url);
+            JSONObject root = new JSONObject(jasonResponce);
             JSONObject response = root.getJSONObject("response");
             JSONArray results = response.getJSONArray("results");
             for (int i = 0 ; i < results.length(); i++ )
